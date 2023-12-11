@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.inhatc.mapper.sbjrecordMapper">
+
+
+	<insert id =  "inserts">
+		insert into tbl_sbjrecord(no, korean, english, math) values
+		( #{no}, #{korean}, #{english}, #{math})
+	</insert>
+	
+	<select id ="select" resultType="com.inhatc.domain.SubjectRecordVO">
+		select * from tbl_sbjrecord
+		where no = #{no}
+	</select>
+	
+	<select id ="selectWithPW" resultType="com.inhatc.domain.SubjectRecordVO">
+		select * from tbl_sbjrecord
+		where no = #{no} and korean = #{korean}
+	</select>
+	
+	<update id = "update">
+	 update tbl_sbjrecord set korean = #{korean}
+	 where no = #{no}
+	 
+	</update>
+	
+	<delete id="delete">
+	delete from tbl_sbjrecord
+	where no = #{no};
+	</delete>
+	
+	<select id ="listAll" resultType="com.inhatc.domain.SubjectRecordVO">
+	<![CDATA[
+		select *
+		from tbl_sbjrecord
+		order by no asc 
+		]]>
+	</select>
+</mapper>

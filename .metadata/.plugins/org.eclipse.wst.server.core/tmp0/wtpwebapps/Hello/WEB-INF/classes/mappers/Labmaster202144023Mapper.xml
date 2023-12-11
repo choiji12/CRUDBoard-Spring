@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.inhatc.mapper.Labmaster202144023Mapper">
+
+
+	<insert id =  "inserts">
+		insert into tbl_202144023_lab_master(labID, labName, labAvail, location, labClass, resDep) values
+		( #{labID}, #{labName}, #{labAvail}, #{location}, #{labClass}, #{resDep})
+	</insert>
+	
+	<select id ="select" resultType="com.inhatc.domain.LabmasterVO">
+		select * from tbl_202144023_lab_master
+		where labID = #{labID}
+	</select>
+	
+	
+	<update id = "update">
+	update tbl_202144023_lab_master set labName = #{labName}
+	, labName = #{labName}, labAvail = #{labAvail}, location = #{location}, labClass = #{labClass}, resDep = #{resDep}
+	where labID = #{labID}
+	 
+	</update>
+	
+	<delete id="delete">
+	delete from tbl_202144023_lab_master
+	where labID = #{labID};
+	</delete>
+	
+	<select id ="listAll" resultType="com.inhatc.domain.LabmasterVO">
+	<![CDATA[
+		select *
+		from tbl_202144023_lab_master
+		order by labID asc 
+		]]>
+	</select>
+</mapper>
