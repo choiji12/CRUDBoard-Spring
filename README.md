@@ -70,6 +70,3 @@
 - **Test & Debugging**: JUnit  
 
 <br>
-
-## 📎 참고 자료
-- 📂 [프로젝트 GitHub Repository](https://github.com/choiji12/CRUDBoard-Spring)
