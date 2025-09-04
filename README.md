@@ -3,7 +3,6 @@
 본 프로젝트는 **Spring Framework**를 활용하여 구현한 MVC 아키텍처 기반 CRUD 게시판입니다.  
 회원이 게시글을 작성, 조회, 수정, 삭제할 수 있으며, 검색과 페이징 기능을 지원합니다.
 
-📂 GitHub Repo: [CRUDBoard-Spring](https://github.com/choiji12/CRUDBoard-Spring)
 
 <br>
 
