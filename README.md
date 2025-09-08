@@ -9,7 +9,7 @@
 ## 📖 프로젝트 개요
 - **주제 선정 이유**: 웹 애플리케이션 개발 역량 강화를 위해 전형적인 CRUD 기능을 가진 게시판 시스템을 직접 구현하고자 함  
 - **목표**: Spring MVC 기반으로 게시글 등록, 조회, 수정, 삭제와 검색·페이징 기능을 지원하는 CRUD 게시판 구축  
-- **환경**: Spring, MySQL, Tomcat, BootStrap
+- **환경**: Spring, MySQL, Tomcat
 
 
 <br>
